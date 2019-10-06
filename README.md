@@ -11,7 +11,7 @@ c:\Private\jdk14-jpackage-1-35-vs-49>java Main
 
 Output
 ```
-`c:\Private\jdk14-jpackage-1-35-vs-49>java Main
+c:\Private\jdk14-jpackage-1-35-vs-49>java Main
 14-jpackage+1-49
 Exception in thread "main" java.lang.NoClassDefFoundError: OptionalService
         at java.base/java.lang.Class.forName0(Native Method)
