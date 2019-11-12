@@ -1,3 +1,14 @@
+### Repro case for a Java issue
+
+https://bugs.openjdk.java.net/browse/JDK-8231924
+
+The changes in JDK 14 via JDK-8212117 to align Class.forName with its specification may need follow on work in the core reflection code that obtains the Type of a field with parameterized type.
+
+The sighting on core-libs-dev is here:
+  https://mail.openjdk.java.net/pipermail/core-libs-dev/2019-October/062747.html
+
+In the example, Service can be loaded but not linked. It may be that makeNamedType needs to catch NoClassDefFoundError so that TypeNotPresentException can be thrown.
+
 ### Compile and run with jpackage+1-35
 
 Output
